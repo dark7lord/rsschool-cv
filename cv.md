@@ -34,7 +34,7 @@ const moveZeros = (arr) => {
 ```
 
 
-## Work expirience
+## Work experience
 
 ### [MiniShell](https://github.com/lcaitlyn/minishell)
 
