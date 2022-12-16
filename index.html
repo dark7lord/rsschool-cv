@@ -2,123 +2,188 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>CV</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1>CV</h1>
+<body class="body">
+  <header class="header">
+    <nav class="header__nav nav">
+      <ul>
+        <li>
+          <a href="#contacs">
+            <span data-hover="Contacts">Contacts</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about-me">
+            <span data-hover="About me">About me</span>
+          </a>
+        </li>
+        <li>
+          <a href="#stack">
+            <span data-hover="Stack">Stack</span>
+          </a>
+        </li>
+        <li>
+          <a href="#example-code">
+            <span data-hover="Example code">Example code</span>
+          </a>
+        </li>
+        <li>
+          <a href="#work-experience">
+            <span data-hover="Work experience">Work experience</span>
+          </a>
+        </li>
+        <li>
+          <a href="#education">
+            <span data-hover="Education">Education</span>
+          </a>
+        </li>
+        <li>
+          <a href="#languages">
+            <span data-hover="Languages">Languages</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="contacts">
-    <h2>Valerii Gaisin</h2>
-    <ul>
-      <li>
-        <b>Telegram: </b><a href="https://t.me/dark7lord">@dark7lord</a>
-      </li>
-      <li>
-        <b>Email: </b> <a href="mailto:dark7lord@yandex.ru">dark7lord@yandex.ru</a>
-      </li>
-    </ul>
-  </div>
+  <main class="main">
+    <h1>CV</h1>
 
-  <div class="about-me">
-    <h2>About me</h2>
-    <p>
-      I wish to become a skilled master in programming, where I can figure everything out and write everything myself (aka Full-Stask developer and Teamlead)
-    </p>
-    <p>
-      I have a good command of layout (adaptive, semantic and beautiful)
-    </p>
-    <p>
-      It is interesting to work together in a team and discuss the project from different points of view (p2p)
-    </p>
-  </div>
-
-  <div class="stack">
-    <h2>Stack</h2>
-    <ul>
-      <li>C/C++, Makefile</li>
-      <li>Git, Shell (Bash, ZSH ("Oh-my-zsh"))</li>
-      <li>HTML, CSS, Less, SCSS</li>
-      <li>JavaScript, Gulp</li>
-    </ul>
-  </div>
+    <div class="main__block contacts" id="contacts">
+      <h2>Valerii Gaisin</h2>
+      <div class="contacts__avatar">
+        <img src="ava.jpg" alt="Valerii" width="400">
+      </div>
+      <ul>
+        <li>
+          <b>Telegram: </b><a href="https://t.me/dark7lord">@dark7lord</a>
+        </li>
+        <li>
+          <b>Email: </b> <a href="mailto:dark7lord@yandex.ru">dark7lord@yandex.ru</a>
+        </li>
+      </ul>
+    </div>
   
-  <div class="example-code">
-    <h2>Code example</h2>
-    <pre class="example-code__code">
-const moveZeros = (arr) => {
-  const zeros = [];
-  for (let x of arr) {
-    if (x === 0) {
-      zeros.push(x);
-    }
+    <div class="main__block about-me" id="about-me">
+      <h2>About me</h2>
+      <p>
+        I wish to become a skilled master in programming, where I can figure everything out and write everything myself (aka Full-Stask developer and Teamlead)
+      </p>
+      <p>
+        I have a good command of layout (adaptive, semantic and beautiful)
+      </p>
+      <p>
+        It is interesting to work together in a team and discuss the project from different points of view (p2p)
+      </p>
+    </div>
+  
+    <div class="main__block stack" id="stack">
+      <h2>Stack</h2>
+      <ul>
+        <li>C/C++, Makefile</li>
+        <li>Git, Shell (Bash, ZSH ("Oh-my-zsh"))</li>
+        <li>HTML, CSS, Less, SCSS</li>
+        <li>JavaScript, Gulp</li>
+      </ul>
+    </div>
+    
+    <div class="main__block example-code" id="example-code">
+      <h2>Code example</h2>
+      <pre class="example-code__code">
+  const moveZeros = (arr) => {
+    const zeros = [];
+    for (let x of arr) {
+      if (x === 0) {
+        zeros.push(x);
+      }
+    };
+    const leftArr = arr.filter(x => x !== 0);
+  
+    return [...leftArr, ...zeros];
   };
-  const leftArr = arr.filter(x => x !== 0);
-
-  return [...leftArr, ...zeros];
-};
-    </pre>
-  </div>
-
-  <div class="work-experience">
-    <h2>Work experience</h2>
-
-    <div class="work-experience__project">
-      <h3>
-        <a href="https://github.com/lcaitlyn/minishell">MiniShell</a>
-      </h3>
-
-      <p>
-        A project written as an educational project of "School 21" in a group of 2 people.
-      </p>
-      <p>
-        A self-implemented version of the command shell, the original bash was used as a reference. Implemented in C
-      </p>
+      </pre>
     </div>
-    <div class="work-experience__project">
-      <h3>Examples of my sites</h3>
-
+  
+    <div class="main__block work-experience" id="work-experience">
+      <h2>Work experience</h2>
+  
+      <div class="work-experience__project">
+        <h3>
+          <a href="https://github.com/lcaitlyn/minishell">MiniShell</a>
+        </h3>
+  
+        <p>
+          A project written as an educational project of "School 21" in a group of 2 people.
+        </p>
+        <p>
+          A self-implemented version of the command shell, the original bash was used as a reference. Implemented in C
+        </p>
+      </div>
+      <div class="work-experience__project">
+        <h3>Examples of my sites</h3>
+  
+        <ul>
+          <li>
+            <a href="https://dark7lord.github.io/adaptive-sedona/index.html">Sedona</a>
+          </li>
+          <li>
+            <a href="https://dark7lord.github.io/nerds/index.html">Nerds</a>
+          </li>
+          <li>
+            <a href="https://dark7lord2012.github.io/Smart-Device/">Smart Device</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="main__block education" id="education">
+      <h2>Education</h2>
+      <div class="education__courses courses">
+        <h3>Courses</h3>
+        <ul>
+          <li>
+            HTML Academy: <a href="https://htmlacademy.ru/profile/dark7lord">Profile</a>
+          </li>
+          <li>
+            Hexlet: <a href="https://ru.hexlet.io/u/gopal">Profile</a>
+          </li>
+          <li>
+            Computer Science and Computer Engineering, Bachelor (2019), Orenburg State Agrarian University
+          </li>
+          <li>
+            RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="main__block languages" id="languages">
+      <h2>Languages</h2>
       <ul>
-        <li>
-          <a href="https://dark7lord.github.io/adaptive-sedona/index.html">Sedona</a>
-        </li>
-        <li>
-          <a href="https://dark7lord.github.io/nerds/index.html">Nerds</a>
-        </li>
-        <li>
-          <a href="https://dark7lord2012.github.io/Smart-Device/">Smart Device</a>
-        </li>
+        <li>English level: A1</li>
+        <li>Russian: Native</li>
       </ul>
     </div>
-  </div>
+  </main>
 
-  <div class="education">
-    <h2>Education</h2>
-    <div class="education__courses courses">
-      <h3>Courses</h3>
+  <footer class="footer">
+    <nav class="footer__nav">
       <ul>
         <li>
-          HTML Academy: <a href="https://htmlacademy.ru/profile/dark7lord">Profile</a>
+          <a href="github.com/dark7lord">My GitHub</a>
         </li>
         <li>
-          Hexlet: <a href="https://ru.hexlet.io/u/gopal">Profile</a>
+          2022
         </li>
         <li>
-          Computer Science and Computer Engineering, Bachelor (2019), Orenburg State Agrarian University
-        </li>
-        <li>
-          RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+          <a href="https://rs.school/js/">
+            <img src="rs_school_js.svg" alt="rs school js" width="50">
+          </a>
         </li>
       </ul>
-    </div>
-  </div>
-
-  <div class="languages">
-    <h2>Languages</h2>
-    <ul>
-      <li>English level: A1</li>
-      <li>Russian: Native</li>
-    </ul>
-  </div>
+    </nav>
+  </footer>
 </body>
 </html>
