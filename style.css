@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  font-family: serif;
+  border-bottom: 2px solid black;
+}
+
+.contacts,
+.about-me,
+.stack,
+.example-code,
+.work-experience,
+.education,
+.languages {
+  max-width: 700px;
+  margin: 10px auto 0;
+  padding: 20px;
+  border: 4px solid black;
+  border-radius: 3px;
+}
+.example-code pre {
+  padding: 10px 20px;
+  background-color: rgba(236, 228, 228, 0.7);
+  border: 1px solid black;
+  border-radius: 10px;
+}
